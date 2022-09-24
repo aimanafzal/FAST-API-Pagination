@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  API_Generator:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: "API_Generator-api"
+    ports:
+      - "80:80"
