@@ -16,3 +16,8 @@ def get_healthz():
 
 
 app = FastAPI("A Simple Pagination", debug=True)
+
+
+@app.get(path="/api/hello", name="hello endpoint")
+async def hello():
+    return {"exercise": "pagination"}
